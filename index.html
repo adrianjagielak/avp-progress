@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image with Overlay</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="image-container">
+            <img
+                src="Apple-WWDC23-Vision-Pro-glass-230605.jpg"
+                alt="Apple Vision Pro"
+            />
+            <div class="overlay"></div>
+        </div>
+        <script>
+            let unitsSold = 517;
+
+            let unitPrice = 4.24;
+            let appleVisionProPrice = 3499;
+            let percentage = (unitsSold * unitPrice) / appleVisionProPrice;
+
+            document.getElementsByClassName("overlay")[0].style.width =
+                (1 - percentage) * 78 + "vw";
+            // Add your script here to adjust the overlay percentage (optional)
+        </script>
+    </body>
+</html>

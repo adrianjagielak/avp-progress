@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    /* Image scales to fit container */
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 11vw;
+    bottom: 0;
+    background-color: #fafafa;
+    /* (1-0.626)*78*/
+    /* width: 29.17vw; */
+    transition: width 0.5s ease;
+    /* Optional: smooth transition */
+}
