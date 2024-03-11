@@ -21,3 +21,11 @@ body {
     bottom: 0;
     background-color: #fafafa;
 }
+
+.progress-text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
