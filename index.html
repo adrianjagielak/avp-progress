@@ -39,17 +39,18 @@
         </div>
         <div class="progress-text">Loading progress...</div>
         <script>
-            let unitsSold = 690
-
-            let unitPrice = 4.2409;
-            let appleVisionProPrice = 3499;
-            let percentage = (unitsSold * unitPrice) / appleVisionProPrice;
-            let progress = (percentage * 100).toFixed(1);
-
-            document.getElementsByClassName("overlay")[0].style.width =
-                (1 - percentage) * 78 + "vw";
-            document.getElementsByClassName("progress-text")[0].innerText =
-                `${unitsSold} / ${Math.round(appleVisionProPrice / unitPrice)} = ${progress}%`;
+            // let unitsSold = 690
+            //
+            // let unitPrice = 4.2409;
+            // let appleVisionProPrice = 3499;
+            // let percentage = (unitsSold * unitPrice) / appleVisionProPrice;
+            // let progress = (percentage * 100).toFixed(1);
+            //
+            // document.getElementsByClassName("overlay")[0].style.width =
+            //     (1 - percentage) * 78 + "vw";
+            // document.getElementsByClassName("progress-text")[0].innerText =
+            //     `${unitsSold} / ${Math.round(appleVisionProPrice / unitPrice)} = ${progress}%`;
+            document.getElementsByClassName("progress-text")[0].innerText = "🎉"
         </script>
     </body>
 </html>
